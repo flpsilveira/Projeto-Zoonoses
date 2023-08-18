@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AdoteAdministrador">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/oleander"
+        android:text="Cadastros de Animais"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="@id/logo"
+        app:layout_constraintTop_toTopOf="@id/logo" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fotoAnimal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="120dp"
+        android:src="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_selecioneFoto"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Selecione uma Foto"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fotoAnimal" />
+
+
+    <EditText
+        android:id="@+id/edit_nome"
+        style="@style/Edit_Text"
+        android:hint="Nome"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_selecioneFoto"
+        />
+
+    <EditText
+        android:id="@+id/edit_raca"
+        style="@style/Edit_Text"
+        android:hint="Raça"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_cor"
+        />
+
+    <EditText
+        android:id="@+id/edit_sexo"
+        style="@style/Edit_Text"
+        android:hint="Sexo"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_raca"
+        />
+
+    <EditText
+        android:id="@+id/edit_idade"
+        style="@style/Edit_Text"
+        android:hint="Idade"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_nome"
+        />
+
+
+    <EditText
+        android:id="@+id/edit_cor"
+        style="@style/Edit_Text"
+        android:hint="Cor"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_idade"
+        />
+
+    <EditText
+        android:id="@+id/edit_vacina"
+        style="@style/Edit_Text"
+        android:hint="Situação Vacinal"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_sexo"
+        />
+
+    <EditText
+        android:id="@+id/edit_castrado"
+        style="@style/Edit_Text"
+        android:hint="Situação Castração"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_vacina"
+        />
+
+    <EditText
+        android:id="@+id/edit_caracteristicas"
+        style="@style/Edit_Text"
+        android:hint="Características"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_castrado"
+        />
+
+
+
+    <!--    <TextView-->
+<!--        android:id="@+id/txt_sexo"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:text="Sexo"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textStyle="bold"-->
+<!--        android:fontFamily="@font/oleander"-->
+<!--        android:textSize="20dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/edit_cor" />-->
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/rg_sexo"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="124dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/edit_cor" >-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/rb_macho"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Macho"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+<!--        <RadioButton-->
+<!--            android:id="@+id/rb_femea"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Fêmea"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+<!--    </RadioGroup>-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/txt_castrado"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="88dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:text="Castrado"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textStyle="bold"-->
+<!--        android:fontFamily="@font/oleander"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/txt_sexo"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/edit_cor" />-->
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/rg_castrado"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="124dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/rg_sexo"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/edit_cor">-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/rb_simCastrado"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Sim"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/rb_naoCastrado"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Não"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="bold" />-->
+<!--    </RadioGroup>-->
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/rg_vacinado"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="124dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/rg_castrado"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/edit_cor" >-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/rb_simVacinado"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Sim"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/rb_naoVacinado"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Não"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="bold"/>-->
+<!--    </RadioGroup>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txt_vacinado"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="54dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:fontFamily="@font/oleander"-->
+<!--        android:text="Vacinado"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/txt_castrado"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/edit_cor" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txt_caracteristicas"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="176dp"-->
+
+<!--        android:fontFamily="@font/oleander"-->
+<!--        android:text="Características"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="25dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.496"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/edit_cor" />-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/cbx_docil"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Dócil"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/txt_caracteristicas"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        />-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/cbx_carinhoso"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Carinhoso"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/cbx_docil"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        />-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/cbx_brincalhao"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Brincalhão"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/cbx_carinhoso"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        />-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/cbx_bravo"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Bravo"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/cbx_brincalhao"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        />-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/cbx_inteligente"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Inteligente"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/cbx_bravo"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        />-->
+
+    <EditText
+        android:id="@+id/txt_observacao"
+        style="@style/Edit_Text"
+        android:hint="Observação:"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_caracteristicas" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_cadastrar"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Cadastrar Pet"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_observacao" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

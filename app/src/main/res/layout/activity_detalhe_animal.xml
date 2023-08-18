@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Detalhe_Animal"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/dt_fotoAnimal"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/dt_FichaAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ficha do Animal"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/oleander"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        />
+    <TextView
+        android:id="@+id/dt_nomeAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="teste"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/oleander"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/dt_TxtIdadeAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/oleander"
+        android:text="IDADE"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dt_IdadeAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/oleander"
+        android:text="teste"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dt_TxtCorAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COR"
+        android:textSize="20sp"
+        android:fontFamily="@font/oleander"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/dt_CorAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="teste"
+        android:textSize="20sp"
+        android:fontFamily="@font/oleander"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/dt_TxtRacaAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RAÇA"
+        android:textSize="20sp"
+        android:fontFamily="@font/oleander"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/dt_RacaAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="teste"
+        android:textSize="20sp"
+        android:fontFamily="@font/oleander"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/dt_TxtSexoAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEXO"
+        android:textSize="20sp"
+        android:fontFamily="@font/oleander"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/dt_SexoAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="teste"
+        android:textSize="20sp"
+        android:fontFamily="@font/oleander"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/dt_TxtVacinaAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SITUAÇÃO VACINAL"
+        android:textSize="20sp"
+        android:fontFamily="@font/oleander"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/dt_VacinaAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="teste"
+        android:textSize="20sp"
+        android:fontFamily="@font/oleander"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/dt_TxtCastradoAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SITUAÇÃO CASTRAÇÃO"
+        android:textSize="20sp"
+        android:fontFamily="@font/oleander"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/dt_CastradoAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="teste"
+        android:textSize="20sp"
+        android:fontFamily="@font/oleander"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/dt_TxtCaracteristicasAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CARACTERÍSTICAS"
+        android:textSize="20sp"
+        android:fontFamily="@font/oleander"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/dt_CaracteristicasAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="teste"
+        android:textSize="20sp"
+        android:fontFamily="@font/oleander"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/dt_TxtObservacoesAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OBSERVAÇÕES"
+        android:textSize="20sp"
+        android:fontFamily="@font/oleander"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/dt_ObservacoesAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="teste"
+        android:textSize="20sp"
+        android:fontFamily="@font/oleander"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        />
+    <Button
+        android:id="@+id/btnQueroAdotar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="QUERO ADOTAR!"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:fontFamily="@font/oleander"
+        android:padding="15dp"
+        android:layout_margin="20dp"
+        android:drawableEnd="@drawable/ic_baseline_pets_24"
+        />
+
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

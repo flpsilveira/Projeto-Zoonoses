@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Detalhe_Animal"
+        android:background="@drawable/background">
+
+        <ImageView
+            android:id="@+id/dt_fotoAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/walpanimais"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:id="@+id/dt_FichaAnimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sobre nós"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/oleander"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            />
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O Centro de Controle de Zoonoses de Fernandópolis tem cerca de 70 animais disponíveis para adoção, sendo aproximadamente 60 cães e 10 gatos. As pessoas interessadas em levar algum deles para casa devem direcionar-se até a avenida Litério Grecco, 300, Vila São Fernando, (fundo da Escola Municipal de Ensino Fundamental e Agrícola Melvin Jones), das 8 às 12h. O telefone é 3462-3341."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A adoção é realizada de forma responsável, por isso, toda pessoa interessada preenche um cadastro e assina o termo de posse do animal, comprometendo-se a realizar todos os cuidados necessários durante toda a vida do cão ou gato."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Os animais adultos são doados castrados, já os filhotes ficam com a castração agendada para quando tiver a idade suficiente para que seja realizado o procedimento, o que ocorre a partir do quinto mês de vida. Todos eles são vacinados, vermifugados e microchipados."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="É importante destacar que a maioria dos animais disponíveis para adoção sofreu um processo de abandono, por isso, é fundamental que as famílias que vão receber estes cães e gatos ofereçam cuidado e proteção a eles."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

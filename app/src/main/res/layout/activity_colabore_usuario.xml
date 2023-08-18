@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Detalhe_Animal"
+        android:background="@drawable/background">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="241dp"
+            android:layout_height="214dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="76dp"
+            android:src="@drawable/moedas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colabore Conosco"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:fontFamily="@font/oleander"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            />
+
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O Centro de Zoonoses da cidade de Fernandópolis está aceitando doações, para continuar realizando seu trabalho em favor dos animais da cidade. Serão aceitas doações: ração (para cães e gatos); caminhas; produtos de limpeza ou doação em forma de dinheiro, através do PIX XXXX-XXXX."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+<!--            android:layout_marginStart="20dp"-->
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Os donativos podem ser entregues diretamente no estabelecimento, das 07:00 as 17:00, de segunda à sexta-feira, na a avenida Litério Grecco, 300, Vila São Fernando. O centro de zoonoses agradece sua doação."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"/>
+<!--            android:layout_marginStart="20dp"-->
+        <Button
+            android:id="@+id/btnWhatsappColabore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="ENTRE EM CONTATO CONOSCO !"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:fontFamily="@font/oleander"
+            android:padding="15dp"
+            android:layout_margin="20dp"
+            android:drawableEnd="@drawable/ic_baseline_pets_24"
+            />
+
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

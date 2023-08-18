@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Detalhe_Animal"
+        android:background="@drawable/background">
+
+        <TextView
+            android:id="@+id/dt_FichaAgendamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ficha do Agendamento"
+            android:textSize="33sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/oleander"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            />
+        <TextView
+            android:id="@+id/dt_nomeUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Felipe"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/oleander"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:id="@+id/dt_TxtTelefoneContato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/oleander"
+            android:text="TELEFONE"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dt_TelefoneContato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/oleander"
+            android:text="(17)99188-0065"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/dt_TxtDataAgendamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATA DO AGENDAMENTO"
+            android:textSize="20sp"
+            android:fontFamily="@font/oleander"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:id="@+id/dt_DataAgendamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25/11/2022"
+            android:textSize="20sp"
+            android:fontFamily="@font/oleander"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:id="@+id/dt_TxtHoraAgendamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HORÁRIO DO AGENDAMENTO"
+            android:textSize="20sp"
+            android:fontFamily="@font/oleander"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:id="@+id/dt_HoraAgendamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:30"
+            android:textSize="20sp"
+            android:fontFamily="@font/oleander"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="ALTERAR AGENDAMENTO !"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:fontFamily="@font/oleander"
+            android:padding="15dp"
+            android:layout_margin="20dp"
+            android:drawableEnd="@drawable/ic_baseline_pets_24"
+            />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "302364909705",
+    "project_id": "projetozoonoses-115f6",
+    "storage_bucket": "projetozoonoses-115f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302364909705:android:6fd481a30ae4226e60e658",
+        "android_client_info": {
+          "package_name": "com.example.projetozoonoses"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302364909705-dtg65rf5hh1a2u07gmuqd5lcqbjt5cdk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNJfHSflnsTf36CgCyJ2J6AFr-o2XnTYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302364909705-dtg65rf5hh1a2u07gmuqd5lcqbjt5cdk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

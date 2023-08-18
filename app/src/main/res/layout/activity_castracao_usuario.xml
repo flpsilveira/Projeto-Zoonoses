@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".CastracaoUsuario">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/oleander"
+        android:text="Agendar uma Castração"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="@id/logo"
+        app:layout_constraintTop_toTopOf="@id/logo" />
+
+    <ImageView
+        android:id="@+id/fotoCalendario"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/calendario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_nomeAgenda"
+        style="@style/Edit_Text"
+        android:hint="Nome para Contato"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fotoCalendario"
+        />
+
+    <EditText
+        android:id="@+id/edit_telefoneAgenda"
+        style="@style/Edit_Text"
+        android:hint="Telefone para Contato"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_nomeAgenda"
+        />
+
+    <EditText
+        android:id="@+id/edit_dataAgenda"
+        style="@style/Edit_Text"
+        android:hint="Data"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_telefoneAgenda"
+        />
+
+    <EditText
+        android:id="@+id/edit_horaAgenda"
+        style="@style/Edit_Text"
+        android:hint="Hora"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_dataAgenda"
+        />
+
+    <Button
+        android:id="@+id/bt_agendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="AGENDAR CASTRAÇÃO!"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:fontFamily="@font/oleander"
+        android:padding="15dp"
+        android:layout_margin="20dp"
+        android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+        app:layout_constraintTop_toBottomOf="@id/edit_horaAgenda"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

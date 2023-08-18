@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".telaPrincipalAministrador">
+
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="152dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_painel_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAINEL DO ADMINISTRADOR"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/oleander"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        />
+
+    <ImageView
+        android:id="@+id/adote"
+        android:layout_width="152dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/adote"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_painel_admin" />
+
+    <TextView
+        android:id="@+id/text_incluir_animal"
+        android:text="Animais"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:fontFamily="@font/oleander"
+        android:layout_marginLeft="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/adote"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+
+    <ImageView
+        android:id="@+id/img_agendamentos"
+        android:layout_width="152dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/agende"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_painel_admin" />
+
+    <TextView
+        android:id="@+id/text_agendamento"
+        android:text="Agendamentos"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:fontFamily="@font/oleander"
+        android:layout_marginRight="27dp"
+        app:layout_constraintTop_toBottomOf="@+id/adote"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <ImageView
+        android:id="@+id/img_alterar_usuario"
+        android:layout_width="152dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/usuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_incluir_animal" />
+
+    <TextView
+        android:id="@+id/text_alterar_usuario"
+        android:text="Alterar Usuário"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:fontFamily="@font/oleander"
+        app:layout_constraintTop_toBottomOf="@+id/img_alterar_usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
